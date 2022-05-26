@@ -7,13 +7,13 @@ import re
 import sys
 import traceback 
 from sys import argv
-import SuzuneHorikita.modules.sql.users_sql as sql
+import Vaibhav.modules.sql.users_sql as sql
 from typing import Optional
-from SuzuneHorikita import pbot, telethn 
+from Vaibhav import pbot, telethn 
 from random import choice
 from telegram import __version__ as peler
 from platform import python_version as memek
-from SuzuneHorikita import (
+from Vaibhav import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -33,9 +33,9 @@ from SuzuneHorikita import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from SuzuneHorikita.modules import ALL_MODULES
-from SuzuneHorikita.modules.helper_funcs.chat_status import is_user_admin
-from SuzuneHorikita.modules.helper_funcs.misc import paginate_modules
+from Vaibhav.modules import ALL_MODULES
+from Vaibhav.modules.helper_funcs.chat_status import is_user_admin
+from Vaibhav.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -96,12 +96,16 @@ pic_list = [
 ]
     
 
-SuzuneHorikitarobot_IMG = choice(pic_list)
+Vaibhavobot_IMG = choice(pic_list)
 
 PM_START_TEXT = """
-Hello Dear ♡︎ !
+Hey There {first_name}. \
+\n────────────────── \
 
-My name is Suzune Horikita - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*                 
+         
+× *Hit /help to see my available commands.*  
+\n────────────────── \
 
 Join My Updates Channel to get information on all the latest updates.
 
