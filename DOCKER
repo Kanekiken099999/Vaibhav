@@ -6,12 +6,12 @@ RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 
 RUN pip3 install --upgrade pip setuptools
 
-RUN git clone -b main https://github.com/kanekiken099999/Shoto /root/Shoto
-WORKDIR /root/Shoto
+RUN git clone -b main https://github.com/kanekiken099999/Vaibhav /root/Vaibhav
+WORKDIR /root/Vaibhav
 
 
 
-COPY ./Shoto/config.py ./Shoto/config.py* /root/Shoto/Shoto/
+COPY ./Shoto/config.py ./Vaibhav/config.py* /root/Vaibhav/Vaibhav/
 
 ENV PATH="/home/bot/bin:$PATH"
 
