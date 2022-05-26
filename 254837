@@ -1,0 +1,22 @@
+FROM python:3.11.0b1
+
+ENV PIP_NO_CACHE_DIR 1
+
+RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
+
+RUN pip3 install --upgrade pip setuptools
+
+RUN git clone -b main https://github.com/kanekiken099999/Shoto /root/Shoto
+WORKDIR /root/Shoto
+
+
+
+COPY ./Shoto/config.py ./Shoto/config.py* /root/Shoto/Shoto/
+
+ENV PATH="/home/bot/bin:$PATH"
+
+
+
+RUN pip3 install --no-cache-dir --upgrade --requirement
+
+CMD bash start
