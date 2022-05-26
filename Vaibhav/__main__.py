@@ -81,18 +81,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 pic_list = [
-    "https://te.legra.ph/file/dd1edbad33718b9521d31.jpg",
-    "https://te.legra.ph/file/79092be2eeb4668a9e3be.jpg",
-    "https://te.legra.ph/file/549704a3754fcc7ca5e74.jpg",
-    "https://te.legra.ph/file/289f112b6f16edc9e11bc.jpg",
-    "https://te.legra.ph/file/517e2d114390df1a9a7aa.jpg",
-    "https://te.legra.ph/file/8654c27dc2282f542d870.jpg",
-    "https://te.legra.ph/file/cf83af6cb6a99e8c19a7e.jpg",
-    "https://te.legra.ph/file/c65c872745c4961474ce4.jpg",
-    "https://te.legra.ph/file/d87f588763a834aa77aa4.jpg",
-    "https://te.legra.ph/file/d9eb3ede71879999bfaac.jpg",
-    "https://te.legra.ph/file/562396308049c01531315.jpg",
-    "https://te.legra.ph/file/c941d5cf0c8910c38ab2c.jpg",
+    "https://telegra.ph/file/a35794d4093e4ea031e57.jpg", 
 ]
     
 
@@ -114,12 +103,12 @@ Join My Updates Channel to get information on all the latest updates.
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Me To Your Group", url="https://t.me/Suzune_Superbot?startgroup=true"),
+            text="Add Me", url="https://t.me/Dedsec_xbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Support Chat", url="https://t.me/Suzune_Support"),
+        InlineKeyboardButton(text="Support", url="https://t.me/dedsecsupport"),
         InlineKeyboardButton(
-            text="Updates Channel", url="https://t.me/SuzuneSuperbot"),
+            text="Updates", url="https://t.me/dedsecsupport"),
     ],
     [
         InlineKeyboardButton(text="•Source Code•", url="https://github.com/desinobita/SuzuneHorikita"),
