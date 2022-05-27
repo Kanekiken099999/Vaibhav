@@ -1,6 +1,6 @@
-import SuzuneHorikita.modules.sql.blacklistusers_sql as sql
-from SuzuneHorikita import ALLOW_EXCL
-from SuzuneHorikita import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import Vaibhav.modules.sql.blacklistusers_sql as sql
+from Vaibhav import ALLOW_EXCL
+from Vaibhav import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
