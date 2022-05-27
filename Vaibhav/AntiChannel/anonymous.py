@@ -7,10 +7,10 @@ from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 from telegram.ext import CallbackContext, Filters, CommandHandler, run_async, CallbackQueryHandler
 
-from SuzuneHorikita import DEV_USERS, dispatcher
-from SuzuneHorikita.AntiChannel.decorators import suzucallback
-from SuzuneHorikita.modules.log_channel import gloggable, loggable
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav import DEV_USERS, dispatcher
+from Vaibhav.AntiChannel.decorators import suzucallback
+from Vaibhav.modules.log_channel import gloggable, loggable
+from Vaibhav.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
