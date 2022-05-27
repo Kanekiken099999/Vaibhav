@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from SuzuneHorikita import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
+from Vaibhav import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from Vaibhav.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler
