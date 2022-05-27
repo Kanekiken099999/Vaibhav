@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from SuzuneHorikita import LOGGER
-from SuzuneHorikita.modules.users import get_user_id
+from Vaibhav import LOGGER
+from Vaibhav.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
