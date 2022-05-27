@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 from sqlalchemy.sql.sqltypes import BigInteger
 
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav.modules.sql import BASE, SESSION
 
 class Approvals(BASE):
     __tablename__ = "approval"
