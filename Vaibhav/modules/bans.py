@@ -14,10 +14,10 @@ from telegram.utils.helpers import mention_html
 from typing import Optional, List
 from telegram import TelegramError
 
-import SuzuneHorikita.modules.sql.users_sql as sql
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.filters import CustomFilters
-from SuzuneHorikita import (
+import Vaibhav.modules.sql.users_sql as sql
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.filters import CustomFilters
+from Vaibhav import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -27,7 +27,7 @@ from SuzuneHorikita import (
     WOLVES,
     dispatcher,
 )
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -40,9 +40,9 @@ from SuzuneHorikita.modules.helper_funcs.chat_status import (
     can_delete,
     dev_plus,
 )
-from SuzuneHorikita.modules.helper_funcs.extraction import extract_user_and_text
-from SuzuneHorikita.modules.helper_funcs.string_handling import extract_time
-from SuzuneHorikita.modules.log_channel import gloggable, loggable
+from Vaibhav.modules.helper_funcs.extraction import extract_user_and_text
+from Vaibhav.modules.helper_funcs.string_handling import extract_time
+from Vaibhav.modules.log_channel import gloggable, loggable
 
 
 
