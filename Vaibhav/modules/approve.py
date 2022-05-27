@@ -1,11 +1,11 @@
 import html
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita import dispatcher, DRAGONS
-from SuzuneHorikita.modules.helper_funcs.extraction import extract_user
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav import dispatcher, DRAGONS
+from Vaibhav.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler
-import SuzuneHorikita.modules.sql.approve_sql as sql
-from SuzuneHorikita.modules.helper_funcs.chat_status import user_admin
-from SuzuneHorikita.modules.log_channel import loggable
+import Vaibhav.modules.sql.approve_sql as sql
+from Vaibhav.modules.helper_funcs.chat_status import user_admin
+from Vaibhav.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
