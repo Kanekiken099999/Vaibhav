@@ -1,6 +1,6 @@
 import threading
 
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
 from sqlalchemy.sql.sqltypes import BigInteger
