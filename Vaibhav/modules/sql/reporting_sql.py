@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String
 from sqlalchemy.sql.sqltypes import BigInteger
 
