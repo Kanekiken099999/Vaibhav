@@ -1,13 +1,13 @@
 
 import random, html
 
-from SuzuneHorikita import dispatcher
-from SuzuneHorikita.modules.disable import (
+from Vaibhav import dispatcher
+from Vaibhav.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from SuzuneHorikita.modules.sql import afk_sql as sql
-from SuzuneHorikita.modules.users import get_user_id
+from Vaibhav.modules.sql import afk_sql as sql
+from Vaibhav.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
