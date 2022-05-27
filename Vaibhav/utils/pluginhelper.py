@@ -13,8 +13,8 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from SuzuneHorikita import OWNER_ID, SUPPORT_CHAT
-from SuzuneHorikita import pbot
+from Vaibhav import OWNER_ID, SUPPORT_CHAT
+from Vaibhav import pbot
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
