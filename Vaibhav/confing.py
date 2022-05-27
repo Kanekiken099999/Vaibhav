@@ -1,5 +1,5 @@
 from envparse import env
-from SuzuneHorikita import LOGGER
+from Vaibhav import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
