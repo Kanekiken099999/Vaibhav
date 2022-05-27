@@ -1,4 +1,4 @@
-from SuzuneHorikita import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
+from Vaibhav import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
 
 IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + TIGERS + DEV_USERS
 
