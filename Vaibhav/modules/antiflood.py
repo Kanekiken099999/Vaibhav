@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from SuzuneHorikita import TIGERS, WOLVES, dispatcher
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav import TIGERS, WOLVES, dispatcher
+from Vaibhav.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from SuzuneHorikita.modules.log_channel import loggable
-from SuzuneHorikita.modules.sql import antiflood_sql as sql
+from Vaibhav.modules.log_channel import loggable
+from Vaibhav.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -22,10 +22,10 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
-from SuzuneHorikita.modules.helper_funcs.string_handling import extract_time
-from SuzuneHorikita.modules.connection import connected
-from SuzuneHorikita.modules.helper_funcs.alternate import send_message
-from SuzuneHorikita.modules.sql.approve_sql import is_approved
+from Vaibhav.modules.helper_funcs.string_handling import extract_time
+from Vaibhav.modules.connection import connected
+from Vaibhav.modules.helper_funcs.alternate import send_message
+from Vaibhav.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
