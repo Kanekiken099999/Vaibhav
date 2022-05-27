@@ -2,7 +2,7 @@ import os
 
 from telethon.tl.types import *
 
-from SuzuneHorikita.utils.pluginhelper import runcmd
+from Vaibhav.utils.pluginhelper import runcmd
 
 async def convert_to_image(event, borg):
     lmao = await event.get_reply_message()
