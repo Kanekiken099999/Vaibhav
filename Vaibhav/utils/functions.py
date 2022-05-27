@@ -32,9 +32,9 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from SuzuneHorikita import aiohttpsession as aiosession
-from SuzuneHorikita.ex_plugins.dbfunctions import start_restart_stage
-from SuzuneHorikita.utils.http import get, post
+from Vaibhav import aiohttpsession as aiosession
+from Vaibhav.ex_plugins.dbfunctions import start_restart_stage
+from Vaibhav.utils.http import get, post
 
 
 async def restart(m: Message):
