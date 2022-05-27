@@ -1,4 +1,4 @@
-from SuzuneHorikita.modules.disable import (
+from Vaibhav.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
@@ -9,7 +9,7 @@ from telegram.ext import (
     InlineQueryHandler,
 )
 from telegram.ext.filters import BaseFilter
-from SuzuneHorikita import dispatcher as d, LOGGER
+from Vaibhav import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
