@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from SuzuneHorikita import DRAGONS, dispatcher
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav import DRAGONS, dispatcher
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -16,13 +16,13 @@ from SuzuneHorikita.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from SuzuneHorikita.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
-from SuzuneHorikita.modules.helper_funcs.extraction import (
+from Vaibhav.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
+from Vaibhav.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SuzuneHorikita.modules.log_channel import loggable
-from SuzuneHorikita.modules.helper_funcs.alternate import send_message
+from Vaibhav.modules.log_channel import loggable
+from Vaibhav.modules.helper_funcs.alternate import send_message
 
 
 @bot_admin
