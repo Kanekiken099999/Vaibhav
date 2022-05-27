@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import SuzuneHorikita.modules.sql.notes_sql as sql
-from SuzuneHorikita import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from SuzuneHorikita.__main__ import DATA_IMPORT
-from SuzuneHorikita.modules.helper_funcs.chat_status import user_admin
-from SuzuneHorikita.modules.helper_funcs.alternate import typing_action
+import Vaibhav.modules.sql.notes_sql as sql
+from Vaibhav import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Vaibhav.__main__ import DATA_IMPORT
+from Vaibhav.modules.helper_funcs.chat_status import user_admin
+from Vaibhav.modules.helper_funcs.alternate import typing_action
 
-# from SuzuneHorikita.modules.rules import get_rules
-import SuzuneHorikita.modules.sql.rules_sql as rulessql
+# from Vaibhav.modules.rules import get_rules
+import Vaibhav.modules.sql.rules_sql as rulessql
 
-# from SuzuneHorikita.modules.sql import warns_sql as warnssql
-import SuzuneHorikita.modules.sql.blacklist_sql as blacklistsql
-from SuzuneHorikita.modules.sql import disable_sql as disabledsql
+# from Vaibhav.modules.sql import warns_sql as warnssql
+import Vaibhav.modules.sql.blacklist_sql as blacklistsql
+from Vaibhav.modules.sql import disable_sql as disabledsql
 
-# from SuzuneHorikita.modules.sql import cust_filters_sql as filtersql
-# import SuzuneHorikita.modules.sql.welcome_sql as welcsql
-import SuzuneHorikita.modules.sql.locks_sql as locksql
-from SuzuneHorikita.modules.connection import connected
+# from Vaibhav.modules.sql import cust_filters_sql as filtersql
+# import Vaibhav.modules.sql.welcome_sql as welcsql
+import Vaibhav.modules.sql.locks_sql as locksql
+from Vaibhav.modules.connection import connected
 
 
 @user_admin
