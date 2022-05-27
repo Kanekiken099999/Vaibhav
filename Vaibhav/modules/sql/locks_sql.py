@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from SuzuneHorikita.modules.sql import SESSION, BASE
+from Vaibhav.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
