@@ -1,7 +1,7 @@
 import threading
 
-from SuzuneHorikita import dispatcher
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav import dispatcher
+from Vaibhav.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
