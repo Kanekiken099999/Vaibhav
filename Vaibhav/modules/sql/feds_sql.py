@@ -1,8 +1,8 @@
 import ast
 import threading
 
-from SuzuneHorikita import dispatcher
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav import dispatcher
+from Vaibhav.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 from sqlalchemy.sql.sqltypes import BigInteger
