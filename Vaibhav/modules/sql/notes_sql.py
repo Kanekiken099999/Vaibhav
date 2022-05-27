@@ -1,8 +1,8 @@
 # Note: chat_id's are stored as strings because the int is too large to be stored in a PSQL database.
 import threading
 
-from SuzuneHorikita.modules.helper_funcs.msg_types import Types
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav.modules.helper_funcs.msg_types import Types
+from Vaibhav.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func
 from sqlalchemy.sql.sqltypes import BigInteger
 
