@@ -1,4 +1,4 @@
-from SuzuneHorikita import LOAD, NO_LOAD, LOGGER
+from Vaibhav import LOAD, NO_LOAD, LOGGER
 import sys
 
 
