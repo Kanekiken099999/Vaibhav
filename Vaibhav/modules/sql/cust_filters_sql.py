@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, distinct, func, Integer
 
-from SuzuneHorikita.modules.helper_funcs.msg_types import Types
-from SuzuneHorikita.modules.sql import BASE, SESSION
+from Vaibhav.modules.helper_funcs.msg_types import Types
+from Vaibhav.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
