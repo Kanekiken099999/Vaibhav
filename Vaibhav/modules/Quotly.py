@@ -9,8 +9,8 @@ import emoji
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
-from SuzuneHorikita import telethn 
-from SuzuneHorikita.events import register
+from Vaibhav import telethn 
+from Vaibhav.events import register
 
 COLORS = [
     "#F07975",
