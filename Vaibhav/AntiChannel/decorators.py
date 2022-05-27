@@ -8,9 +8,9 @@ from telegram.ext import (
 )
 from telegram.ext.filters import MessageFilter
 
-from SuzuneHorikita import LOGGER
-from SuzuneHorikita import dispatcher as d
-from SuzuneHorikita.modules.disable import (
+from Vaibhav import LOGGER
+from Vaibhav import dispatcher as d
+from Vaibhav.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
