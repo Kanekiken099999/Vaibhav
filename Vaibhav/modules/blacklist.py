@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import SuzuneHorikita.modules.sql.blacklist_sql as sql
-from SuzuneHorikita import dispatcher, LOGGER
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SuzuneHorikita.modules.helper_funcs.extraction import extract_text
-from SuzuneHorikita.modules.helper_funcs.misc import split_message
-from SuzuneHorikita.modules.log_channel import loggable
-from SuzuneHorikita.modules.warns import warn
-from SuzuneHorikita.modules.helper_funcs.string_handling import extract_time
-from SuzuneHorikita.modules.connection import connected
-from SuzuneHorikita.modules.sql.approve_sql import is_approved
-from SuzuneHorikita.modules.helper_funcs.alternate import send_message, typing_action
+import Vaibhav.modules.sql.blacklist_sql as sql
+from Vaibhav import dispatcher, LOGGER
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Vaibhav.modules.helper_funcs.extraction import extract_text
+from Vaibhav.modules.helper_funcs.misc import split_message
+from Vaibhav.modules.log_channel import loggable
+from Vaibhav.modules.warns import warn
+from Vaibhav.modules.helper_funcs.string_handling import extract_time
+from Vaibhav.modules.connection import connected
+from Vaibhav.modules.sql.approve_sql import is_approved
+from Vaibhav.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
