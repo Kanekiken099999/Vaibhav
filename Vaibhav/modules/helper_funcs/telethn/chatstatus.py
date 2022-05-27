@@ -1,5 +1,5 @@
-from SuzuneHorikita.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from SuzuneHorikita import DRAGONS
+from Vaibhav.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Vaibhav import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
