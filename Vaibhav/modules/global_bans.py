@@ -2,7 +2,7 @@ import html
 import time
 from datetime import datetime
 from io import BytesIO
-from SuzuneHorikita.modules.helper_funcs.chat_status import dev_plus
+from Vaibhav.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.error import BadRequest, TelegramError, Unauthorized
 from telegram.ext import (
@@ -13,9 +13,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import SuzuneHorikita.modules.sql.global_bans_sql as sql
-from SuzuneHorikita.modules.sql.users_sql import get_user_com_chats
-from SuzuneHorikita import (
+import Vaibhav.modules.sql.global_bans_sql as sql
+from Vaibhav.modules.sql.users_sql import get_user_com_chats
+from Vaibhav import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -29,16 +29,16 @@ from SuzuneHorikita import (
     sw,
     dispatcher,
 )
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from SuzuneHorikita.modules.helper_funcs.extraction import (
+from Vaibhav.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SuzuneHorikita.modules.helper_funcs.misc import send_to_list
+from Vaibhav.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
