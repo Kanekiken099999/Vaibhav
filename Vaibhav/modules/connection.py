@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler
 
-import SuzuneHorikita.modules.sql.connection_sql as sql
-from SuzuneHorikita import dispatcher, DRAGONS, DEV_USERS
-from SuzuneHorikita.modules.helper_funcs import chat_status
-from SuzuneHorikita.modules.helper_funcs.alternate import send_message, typing_action
+import Vaibhav.modules.sql.connection_sql as sql
+from Vaibhav import dispatcher, DRAGONS, DEV_USERS
+from Vaibhav.modules.helper_funcs import chat_status
+from Vaibhav.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
