@@ -18,15 +18,15 @@ from Vaibhav import (
     WOLVES,
     dispatcher,
 )
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.alternate import send_message
-from SuzuneHorikita.modules.helper_funcs.chat_status import is_user_admin
-from SuzuneHorikita.modules.helper_funcs.extraction import (
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.alternate import send_message
+from Vaibhav.modules.helper_funcs.chat_status import is_user_admin
+from Vaibhav.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from SuzuneHorikita.modules.helper_funcs.string_handling import markdown_parser
+from Vaibhav.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
