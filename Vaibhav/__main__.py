@@ -95,7 +95,7 @@ Hey There {first_name}. \
          
 × *Hit /help to see my available commands.*  
 \n────────────────── \
-
+\n.                 ────────────────── \
 Join My Updates Channel to get information on all the latest updates.
 
 """
@@ -370,7 +370,7 @@ def help_button(update, context):
 
 
 
-def SuzuneHorikitarobot_about_callback(update, context):
+def Vaibhavrobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "Vaibhavrobot_":
         query.message.edit_text(
@@ -437,7 +437,7 @@ def SuzuneHorikitarobot_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "SuzuneHorikitarobot_admin":
+    elif query.data == "Vaibhavrobot_admin":
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
