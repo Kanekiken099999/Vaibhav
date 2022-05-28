@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import SuzuneHorikita.modules.sql.blsticker_sql as sql
-from SuzuneHorikita import LOGGER, dispatcher
-from SuzuneHorikita.modules.connection import connected
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.alternate import send_message
-from SuzuneHorikita.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SuzuneHorikita.modules.helper_funcs.misc import split_message
-from SuzuneHorikita.modules.helper_funcs.string_handling import extract_time
+import Vaibhav.modules.sql.blsticker_sql as sql
+from Vaibhav import LOGGER, dispatcher
+from Vaibhav.modules.connection import connected
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.alternate import send_message
+from Vaibhav.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Vaibhav.modules.helper_funcs.misc import split_message
+from Vaibhav.modules.helper_funcs.string_handling import extract_time
 
-from SuzuneHorikita.modules.log_channel import loggable
-from SuzuneHorikita.modules.warns import warn
+from Vaibhav.modules.log_channel import loggable
+from Vaibhav.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
