@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 pic_list = [
-    "https://telegra.ph/file/a35794d4093e4ea031e57.jpg", 
+    "https://telegra.ph/file/42d9331ebc0f837cd99a9.jpg", 
 ]
     
 
@@ -856,7 +856,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "*Back Online To Server ⚡*")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yo! I'm Alive")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
