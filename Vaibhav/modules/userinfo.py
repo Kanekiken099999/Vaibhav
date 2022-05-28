@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "•Support•", url="https://t.me/Shoto_xxsupport"),
+                                "•Support•", url="https://t.me/dedsecsupport"),
                             InlineKeyboardButton(
-                                "•Updates•", url="https://t.me/shoto_xxupdates")
+                                "•Owner•", url="https://t.me/x0x_VAIBHAV_x0x")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "•Support•", url="https://t.me/shoto_xxsupport"),
+                                "•Support•", url="https://t.me/dedsecsupport"),
                             InlineKeyboardButton(
-                                "•Updates•", url="https://t.me/shoto_xxupdates")
+                                "•Owner•", url="https://t.me/x0x_VAIBHAV_x0x")
                         ],
                     ]
                 ),
@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>Stats Of Shoto Todoroki</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>Stats Of DedSec</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>By 𝘼𝙗𝙝𝙞𝙣𝙖𝙫 || ᏆᏀΝᏆͲᎬ</b>"
+    result += "\n<b>By Vaibhav</b>"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
