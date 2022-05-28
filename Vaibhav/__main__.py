@@ -111,16 +111,16 @@ buttons = [
             text="Updates", url="https://t.me/dedsecsupport"),
     ],
     [
-        InlineKeyboardButton(text="•Source Code•", url="https://github.com/desinobita/SuzuneHorikita"),
+        InlineKeyboardButton(text="Source Code", url="https://github.com/vaibhav675v"),
     ],
 ]
 
 
 HELP_STRINGS = """
-* 𝐒ᴜᴢᴜɴᴇ 𝐇ᴏʀɪᴋɪᴛᴀ Is Here with
-AI Chatbot, Anime, Music, Notes, Filters, NSFW and more!
+* Vaibhav's Bot Is Here with
+AI Anime, Music, Notes, Filters, NSFW and more!
  All commands can either be used with / or !.
- Reach out for support: @Suzune_Support.*"""
+ Reach out for support: @dedsecsupport.*"""
 
 
 
@@ -138,7 +138,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("SuzuneHorikita.modules." + module_name)
+    imported_module = importlib.import_module("Vaibhav.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -237,12 +237,12 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            SuzuneHorikitarobot_IMG, caption= "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            Vaibhavrobot_IMG, caption= "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Suzune_Support ")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/dedsecsupport ")]]
             ),
         )
         
@@ -372,10 +372,10 @@ def help_button(update, context):
 
 def SuzuneHorikitarobot_about_callback(update, context):
     query = update.callback_query
-    if query.data == "SuzuneHorikitarobot_":
+    if query.data == "Vaibhavrobot_":
         query.message.edit_text(
-            text=""" *SuzuneHorikita* - A bot to manage your groups with additional features!
-            \nHere the basic help regarding use of SuzuneHorikitarobot.
+            text=""" *Vaibhav* - A bot to manage your groups with additional features!
+            \nHere the basic help regarding use of Vaibhavrobot.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending /help
             \nReport error/bugs click the Button""",
@@ -385,7 +385,7 @@ def SuzuneHorikitarobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/Suzune_Support "
+                            text="Bᴜɢ'ꜱ", url="t.me/dedsecsupport "
                         ),
                         InlineKeyboardButton(
                             text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/SuzuneSuperbot /32"
@@ -395,7 +395,7 @@ def SuzuneHorikitarobot_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "SuzuneHorikitarobot_back":
+    elif query.data == "Vaibhavrobot_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -409,13 +409,13 @@ def SuzuneHorikitarobot_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    elif query.data == "SuzuneHorikitarobot_basichelp":
+    elif query.data == "Vaibhavrobot_basichelp":
         query.message.edit_text(
             text=f"*Here's basic Help regarding* *How to use Me?*"
             
             f"\n\n Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n After adding promote me manually with full rights for faster experience.\n"
-            f"\n Than send /admincache@SuzuneHorikitaRobot in that chat to refresh admin list in My database.\n"
+            f"\n Than send /admincache@VaibhavRobot in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -423,15 +423,15 @@ def SuzuneHorikitarobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="SuzuneHorikitarobot_admin"),
-                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="SuzuneHorikitarobot_notes"),
+                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="Vaibhavrobot_admin"),
+                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="Vaibhavrobot_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="SuzuneHorikitarobot_support"),
-                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="SuzuneHorikitarobot_credit"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="Vaibhavrobot_support"),
+                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="Vaibhavrobot_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_back"),
+                    InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_back"),
                  
                  ]
                 ]
@@ -441,7 +441,7 @@ def SuzuneHorikitarobot_about_callback(update, context):
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n Congragulations, SuzuneHorikitaRobot now ready to manage your group."
+            f"\n Congragulations, VaibhavRobot now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\n Basic Admin tools help you to protect and powerup your group."
             f"\n You can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -451,11 +451,11 @@ def SuzuneHorikitarobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_basichelp")]]
             ),
         )
 
-    elif query.data == "SuzuneHorikitarobot_notes":
+    elif query.data == "Vaibhavrobot_notes":
         query.message.edit_text(
             text=f"<b> Setting Up Notes</b>"
             
@@ -464,31 +464,31 @@ def SuzuneHorikitarobot_about_callback(update, context):
             f"\n\n You can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_basichelp")]]
             ),
         )
-    elif query.data == "SuzuneHorikitarobot_asst":
+    elif query.data == "Vaibhavrobot_asst":
         query.message.edit_text(
             text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
             
             f"\n*SETUP ASSISTANT*"
             f"\n\n 1.) first, add me to your group."
             f"\n\n 2.) then promote me as admin and give all permissions except anonymous admin."
-            f"\n\n 3.) add @SuzuneHorikitaPlugin to your group:"
+            f"\n\n 3.) add @Dedsec_xd to your group:"
             f"\n\n 4.) turn on the video chat first before start to play music."
-            f"\n\n *Lets Enjoy The SuzuneHorikita Music And Join Support Group @Suzune_Support *"
-            f"\n\n*By Suzune Team~*",
+            f"\n\n *Lets Enjoy The Vaibhav Music And Join Support Group @Dedsecsupport *"
+            f"\n\n*By Vaibhav Team~*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_back")]]
             ),
         )
-    elif query.data == "SuzuneHorikitarobot_admin":
+    elif query.data == "Vaibhavrobot_admin":
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n Congragulations, SuzuneHorikitaRobot now ready to manage your group."
+            f"\n Congragulations, VaibhavRobot now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\n Basic Admin tools help you to protect and powerup your group."
             f"\n You can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -498,12 +498,12 @@ def SuzuneHorikitarobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_basichelp")]]
             ),
         )    
-    elif query.data == "SuzuneHorikitarobot_support":
+    elif query.data == "Vaibhavrobot_support":
         query.message.edit_text(
-            text="* SuzuneHorikita Support Chats*"
+            text="* Vaibhav Support Chats*"
             
             "\n\n Join Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
@@ -524,11 +524,11 @@ def SuzuneHorikitarobot_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "SuzuneHorikitarobot_credit":
+    elif query.data == "Vaibhavrobot_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR SuzuneHorikita DEV'S</b>\n"
+            text=f"<b> CREDIT FOR Vaibhav's Bot DEV'S</b>\n"
             
-            f"\n> Here Some Developers Helping in Making The SuzuneHorikita Bot",
+            f"\n> Here Some Developers Helping in Making The Vaibhav Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -541,7 +541,7 @@ def SuzuneHorikitarobot_about_callback(update, context):
                     InlineKeyboardButton(text="Dᴇ Cᴏᴅᴇ", url="https://t.me/Suzune_Support +"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_basichelp"),
                  
                  ]
                 ]
@@ -554,8 +554,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..Its *SuzuneHorikitarobot*
-                 \nHere is the [Owner](https://t.me/TheVenomXD) .""",
+            text=""" Hi..Its *VaibhavRobot*
+                 \nHere is the [Owner](https://t.me/x0x_VAIBHAV_x0x) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
