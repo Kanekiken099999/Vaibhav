@@ -88,7 +88,7 @@ pic_list = [
 Vaibhavrobot_IMG = choice(pic_list)
 
 PM_START_TEXT = """
-Hey There {first_name}. \
+Hey There {}. \
 \n────────────────── \
 
 × *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*                 
@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 Vaibhavrobot_IMG,
-                PM_START_TEXT,
+                caption=PM_START_TEXT.format(first_name),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
