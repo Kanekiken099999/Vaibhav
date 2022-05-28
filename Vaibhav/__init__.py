@@ -210,7 +210,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from SuzuneHorikita.modules.sql import SESSION
+from Vaibhav.modules.sql import SESSION
 BOT_API_URL="https://api.telegram.org/bot"
 
 defaults = tg.Defaults(run_async=True)
