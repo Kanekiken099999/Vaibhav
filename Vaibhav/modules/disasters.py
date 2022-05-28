@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from SuzuneHorikita import (
+from Vaibhav import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,13 +13,13 @@ from SuzuneHorikita import (
     WOLVES,
     dispatcher,
 )
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from SuzuneHorikita.modules.helper_funcs.extraction import extract_user
-from SuzuneHorikita.modules.log_channel import gloggable
+from Vaibhav.modules.helper_funcs.extraction import extract_user
+from Vaibhav.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
