@@ -1,14 +1,14 @@
 import html
 
-from SuzuneHorikita import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.chat_status import (
+from Vaibhav import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from SuzuneHorikita.modules.sql import cleaner_sql as sql
+from Vaibhav.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
