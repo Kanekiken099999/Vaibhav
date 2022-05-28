@@ -30,36 +30,36 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "5380428632:AAHjr0pGqO_0ndnjvaEQCEmgPqHUNTuuhgw"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "13849191"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "c1b434defccacad6063758c9a7d76d5d"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
          "required": false,
-         "value": "sqldbtype://username:pw@hostname:port/db_name"
+         "value": "postgresql://postgres:rytET9i1NBgI2bSY0CcQ@containers-us-west-53.railway.app:7085/railway"
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1956381927"
+         "value": "5122071509"
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
          "required": true,
-         "value": ""
+         "value": "5380428632"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": ""
+        "value": "dc09e092-6eba-4c1d-9045-1b71105d5dbd"
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
@@ -67,17 +67,17 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "ProErrorXD"
+         "value": "Redeye_Ghoul"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "SiderzChat"
+         "value": "Trialgc"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": ""
+         "value": "mongodb://Abhinav:abhinav123@cluster0-shard-00-00.eucqh.mongodb.net:27017,cluster0-shard-00-01.eucqh.mongodb.net:27017,cluster0-shard-00-02.eucqh.mongodb.net:27017/?ssl=true&replicaSet=atlas-uvy8av-shard-0&authSource=admin&retryWrites=true&w=majority"
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
