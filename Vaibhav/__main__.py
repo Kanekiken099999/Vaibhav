@@ -103,7 +103,7 @@ Join My Updates Channel to get information on all the latest updates.
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Me", url="https://t.me/Uzumaki_Naruto_Robot?startgroup=true"),
+            text="Add Me", url="https://t.me/dedsec_xbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Support", url="https://t.me/dedsecsupport"),
