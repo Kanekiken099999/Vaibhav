@@ -7,8 +7,8 @@ import time
 import uuid
 from io import BytesIO
 
-import SuzuneHorikita.modules.sql.feds_sql as sql
-from SuzuneHorikita import (
+import Vaibhav.modules.sql.feds_sql as sql
+from Vaibhav import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
