@@ -85,7 +85,7 @@ pic_list = [
 ]
     
 
-Vaibhavobot_IMG = choice(pic_list)
+Vaibhavobot_IMG = random.choice(pic_list)
 
 PM_START_TEXT = """
 Hey There {first_name}. \
