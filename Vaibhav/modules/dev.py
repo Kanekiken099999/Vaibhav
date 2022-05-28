@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import SuzuneHorikita
+import Vaibhav 
 
-from SuzuneHorikita import dispatcher
-from SuzuneHorikita.modules.helper_funcs.chat_status import dev_plus
+from Vaibhav import dispatcher
+from Vaibhav.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler
