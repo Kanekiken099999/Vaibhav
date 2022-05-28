@@ -388,10 +388,10 @@ def Vaibhavrobot_about_callback(update, context):
                             text="Bᴜɢ'ꜱ", url="t.me/dedsecsupport "
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/SuzuneSuperbot /32"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/dedsecsupport"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="SuzuneHorikitarobot_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="Vaibhavrobot_back")],
                 ]
             ),
         )
@@ -873,7 +873,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(SuzuneHorikitarobot_about_callback, pattern=r"SuzuneHorikitarobot_")
+    about_callback_handler = CallbackQueryHandler(Vaibhavrobot_about_callback, pattern=("Vaibhavrobot_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
