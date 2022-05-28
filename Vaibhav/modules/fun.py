@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import SuzuneHorikita.modules.fun_strings as fun_strings
-from SuzuneHorikita import dispatcher
-from SuzuneHorikita.modules.disable import DisableAbleCommandHandler
-from SuzuneHorikita.modules.helper_funcs.chat_status import is_user_admin
-from SuzuneHorikita.modules.helper_funcs.extraction import extract_user
+import Vaibhav.modules.fun_strings as fun_strings
+from Vaibhav import dispatcher
+from Vaibhav.modules.disable import DisableAbleCommandHandler
+from Vaibhav.modules.helper_funcs.chat_status import is_user_admin
+from Vaibhav.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
