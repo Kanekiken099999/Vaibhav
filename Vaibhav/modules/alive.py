@@ -9,7 +9,7 @@ from Vaibhav.events import register
 from Vaibhav import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/e782fdd077edd25a332d6.jpg"
+PHOTO = "https://telegra.ph/file/9cf2837739754f9aec7b6.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
