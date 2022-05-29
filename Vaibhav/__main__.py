@@ -91,7 +91,7 @@ PM_START_TEXT = """
 Hey There {}. \
 \n────────────────── \
 
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*                 
+× *I'ᴍ A Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*                 
          
 × *Hit /help to see my available commands.*  
 \n────────────────── \
